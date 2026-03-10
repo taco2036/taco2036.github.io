@@ -3,7 +3,7 @@ applicationTitle: GAMATE CABLE
 
 osd:
   theme: sat2007
-   aspectRatioBehavior: stretch
+  aspectRatioBehavior: stretch
   themeOptions: # certain themes have additional options that can be set like this:
   showMessageIcon: true # Show the message icon in the top bar
   showChannelLockIcon: true # Show the channel lock icon in the top bar
