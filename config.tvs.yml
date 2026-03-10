@@ -39,7 +39,7 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
   video: https://rhine.webchnl.live/memfs/a5ebeea5-d842-43ae-add9-290d59f5593e.m3u8
   icon: https://webchnl.com/assets/img/channelicons/voltix.png
 
-- number: 32
+- number: 3
   name: Newsfeed
   abbr: NEWS
   mix:
