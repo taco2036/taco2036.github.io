@@ -43,7 +43,11 @@ channels:
   name: VOLTIX
   title: VOLTIX
   abbr: VTX
-  video: https://rhine.webchnl.live/memfs/a5ebeea5-d842-43ae-add9-290d59f5593e.m3u8
+  mix:
+    a: 
+      image: https://file.garden/aUYIWVAKvQxCBY-_/images/yt/xbox/YouTubeSplashBackground480P.jpg
+    b:
+      video: https://rhine.webchnl.live/memfs/a5ebeea5-d842-43ae-add9-290d59f5593e.m3u8
   icon: https://webchnl.com/assets/img/channelicons/voltix.png
 
 - number: 3
