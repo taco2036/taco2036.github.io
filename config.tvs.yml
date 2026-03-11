@@ -4,6 +4,10 @@ blur: false
 bezel: flat 
 startUnmuted: true
 
+dimensions:
+  screenWidth: 1280 
+  screenHeight: 960
+
 osd:
   theme: sat2007
   aspectRatioBehavior: stretch
@@ -71,5 +75,15 @@ channels:
    theme: "1989"
    themeOptions:
       ticker:
-      - "Hypercom cable - connecting you to the future"
+      - "GAMATE CABLE - connecting you to the future"
       - "Pay-Per-View Movies - Ch 1 - Straight from Hollywood to your home, anytime!"
+      - "Thunderstorm Advisory until AUG 12 2036 at 3:14 PM ET"
+
+- number: 6
+  title: Voxel
+  name: Voxel Explorer
+  icon: https://file.garden/aUYIWVAKvQxCBY-_/channels/dtv-2015/910RedZoneChannel.png
+  iframe:
+   src: https://windows93.net/c/programs/editors/WebVoxel/index.html
+   allowInteraction: true
+  
