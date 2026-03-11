@@ -20,12 +20,20 @@ osd:
 # The rest of this file is about defining a channel lineup.
 ####################
 
-# noSignalContent: # Optional. You can specify content to show when a channel is off the air.
-#   image: placeholders/no-signal.png
+noSignalContent:
+  image: placeholders/no-signal.png
 
 defaultChannel: 1 # Required. The default channel to start on when visiting the page.
 
 channels:
+
+- number: 0
+  guide:
+   theme: "1989"
+   themeOptions:
+      ticker:
+      - "Hypercom cable - connecting you to the future"
+      - "Pay-Per-View Movies - Ch 1 - Straight from Hollywood to your home, anytime!"
 
 - number: 1
   name: On Demand
@@ -61,6 +69,7 @@ channels:
 - number: 4
   name: Desktop
   title: Desktop
+  abbr: DST
   iframe: 
    src: https://windows96.net/?rootfs=https://file.garden/aUYIWVAKvQxCBY-_/zip/gamaterootfs.zip
    allowInteraction: true
