@@ -26,6 +26,7 @@ osd:
 
 noSignalContent:
   image: placeholders/no-signal.png
+  backgroundAudio: https://v2.windows93.net:8087/mpd.ogg
 
 defaultChannel: 1 # Required. The default channel to start on when visiting the page.
 
@@ -86,4 +87,11 @@ channels:
   iframe:
    src: https://windows93.net/c/programs/editors/WebVoxel/index.html
    allowInteraction: true
+  
+
+- number: 7
+  title: RIZZ FM
+  name: RIZZ FM
+  visualizer: https://v2.windows93.net:8087/mpd.ogg
+  icon: https://file.garden/aUYIWVAKvQxCBY-_/channels/dtv-2015/851SonicTap.png
   
