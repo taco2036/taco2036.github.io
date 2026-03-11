@@ -27,14 +27,6 @@ defaultChannel: 1 # Required. The default channel to start on when visiting the 
 
 channels:
 
-- number: 0
-  guide:
-   theme: "1989"
-   themeOptions:
-      ticker:
-      - "Hypercom cable - connecting you to the future"
-      - "Pay-Per-View Movies - Ch 1 - Straight from Hollywood to your home, anytime!"
-
 - number: 1
   name: On Demand
   title: On Demand
@@ -73,3 +65,11 @@ channels:
   iframe: 
    src: https://windows96.net/?rootfs=https://file.garden/aUYIWVAKvQxCBY-_/zip/gamaterootfs.zip
    allowInteraction: true
+
+- number: 5
+  guide:
+   theme: "1989"
+   themeOptions:
+      ticker:
+      - "Hypercom cable - connecting you to the future"
+      - "Pay-Per-View Movies - Ch 1 - Straight from Hollywood to your home, anytime!"
