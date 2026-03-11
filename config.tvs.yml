@@ -25,22 +25,25 @@ osd:
 
 defaultChannel: 1 # Required. The default channel to start on when visiting the page.
 
-channels: # starts a list of channels. Every channel below begins with a "-" as that lets YAML know we're defining a list.
+channels:
 
-- number: 1 # Required. Every channel needs a unique number. Negative numbers indicate line inputs, so -1 will be displayed as "LINE 1". Channel 0 is displayed as the TV's "MENU".
-  name: On Demand # Required. The name of the channel.
-  abbr: ON # Required. An abbreviation for the channel; try to keep it short.
+- number: 1
+  name: On Demand
+  title: On Demand
+  abbr: ON
   image: placeholders/channel-1.png
   backgroundAudio: placeholders/bgm-3.mp3
 
 - number: 2
   name: VOLTIX
+  title: VOLTIX
   abbr: VTX
   video: https://rhine.webchnl.live/memfs/a5ebeea5-d842-43ae-add9-290d59f5593e.m3u8
   icon: https://webchnl.com/assets/img/channelicons/voltix.png
 
 - number: 3
   name: Newsfeed
+  title: Newsfeed
   abbr: NEWS
   mix:
     a:
@@ -54,3 +57,8 @@ channels: # starts a list of channels. Every channel below begins with a "-" as 
         scrollDelay: 6 # Optional. The delay in seconds before and after scrolling text.
         backgroundImage: false # Optional. The default image will be displayed if this is set to false. Do this when using in a mix layout to change the background color for instance.
         # textColor: orangered # The text color of the feed reader; this is used for the text color of feed items
+
+- number: 4
+  name: Desktop
+  title: Desktop
+  iframe: https://windows96.net/?rootfs=https://file.garden/aUYIWVAKvQxCBY-_/zip/gamaterootfs.zip
