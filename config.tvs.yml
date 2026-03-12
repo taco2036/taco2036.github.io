@@ -5,8 +5,8 @@ bezel: flat
 startUnmuted: true
 
 dimensions:
-  screenWidth: 1280 
-  screenHeight: 960
+  screenWidth: 800 
+  screenHeight: 600
 
 osd:
   theme: sat2007
@@ -98,4 +98,12 @@ channels:
   name: RIZZ FM
   visualizer: https://v2.windows93.net:8087/mpd.ogg
   icon: https://file.garden/aUYIWVAKvQxCBY-_/channels/dtv-2015/851SonicTap.png
+  
+- number: 8
+  title: YouTube
+  name: YouTube
+  icon: https://file.garden/aUYIWVAKvQxCBY-_/images/yt/xbox/everything/Logo_YouTube_Title.png
+  iframe:
+   src: https://gamate-hash.github.io/tv/
+   allowInteraction: true
   
