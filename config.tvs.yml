@@ -6,7 +6,7 @@ startUnmuted: true
 
 noSignalContent: # Optional. You can specify content to show when a channel is off the air.
   image: nosignal_screen.png
-  backgroundAudio
+  backgroundAudio: https://file.garden/aUYIWVAKvQxCBY-_/music/Account_Organism.mp3
 
 osd:
   theme: digital # old comcast ahh
