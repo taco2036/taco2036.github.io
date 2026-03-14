@@ -39,8 +39,8 @@ channels:
   v-split:
     a:
       youtube-playlist:
-      src: UUUjlPym2cxucUVPdE8kYOOg
-      shuffle: true
+       src: UUUjlPym2cxucUVPdE8kYOOg
+       shuffle: true
     b:
       guide:
         logo: placeholders/guide-header.png
