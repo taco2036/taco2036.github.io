@@ -52,7 +52,6 @@ channels:
   name: Keno
   abbr: KENO1
   title: ONLY KENO!
-  title: Keno
   description: ONLY KENO - By Bubble Bass AKA Bubble Ass
   backgroundAudio: /music.pls
   backgroundAudioOptions:
@@ -66,7 +65,6 @@ channels:
   name: Keno 2
   title: ONLY KENO!
   abbr: KENO2
-  title: Keno 2
   description: ONLY KENO - By Bubble Bass AKA Bubble Ass
   backgroundAudio: /music.pls
   backgroundAudioOptions:
