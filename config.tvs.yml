@@ -1,4 +1,4 @@
-applicationTitle: GAMATE CABLE
+applicationTitle: Taco2036
 shadowMask: aperture-grille
 blur: false 
 bezel: flat 
@@ -9,105 +9,55 @@ dimensions:
   screenHeight: 600
 
 osd:
-  theme: sat2007
-  aspectRatioBehavior: stretch
-  themeOptions: # certain themes have additional options that can be set like this:
-  showMessageIcon: true # Show the message icon in the top bar
-  showChannelLockIcon: true # Show the channel lock icon in the top bar
+  theme: digital # 1990's analog C-band satellite receiver theme
 
-
-
-##### CHANNELS #####
-# REFERENCE:
-# https://greenhillplaza.notion.site/Television-Simulator-99-c28584f069b94f58a71b5c9fe2484dcb#8969cd7aff0e4d569efa77b15cbacf51
-#
-# The rest of this file is about defining a channel lineup.
-####################
-
-noSignalContent:
-  image: placeholders/no-signal.png
-  backgroundAudio: https://v2.windows93.net:8087/mpd.ogg
-
-defaultChannel: 1 # Required. The default channel to start on when visiting the page.
 
 channels:
 
 - number: 1
-  name: On Demand
-  title: On Demand
-  abbr: ON
-  image: placeholders/channel-1.png
-  backgroundAudio: placeholders/bgm-3.mp3
+  name: Welcome
+  abbr: HELLO
+  title: Public Beta Testing # Optional. Title to show in the channel guides, including program guide channels and in the digital cable theme's on-screen guide.
+  description: Thanks for testing Television Simulator '99 v2, Public Beta! # Optional. Description to show in the guide.
+  image: /welcome.png
+  backgroundAudio: /placeholders/bgm-2.mp3
 
 - number: 2
-  name: VOLTIX
-  title: VOLTIX
-  abbr: VTX
-  mix:
-    a: 
-      image: https://file.garden/aUYIWVAKvQxCBY-_/images/yt/xbox/YouTubeSplashBackground480P.jpg
-    b:
-      video: https://rhine.webchnl.live/memfs/a5ebeea5-d842-43ae-add9-290d59f5593e.m3u8
-  icon: https://webchnl.com/assets/img/channelicons/voltix.png
+  name: You're watching Television Simulator
+  abbr: TVS
+  video: placeholders/tvs-loop.mp4
+  backgroundAudio: /content/bgm-4.mp3
 
 - number: 3
-  name: Newsfeed
-  title: Newsfeed
+  name: TVS Update News
   abbr: NEWS
-  mix:
-    a:
-      image: https://rhine.webchnl.com/memfs/daad2183-472a-4a6f-ac37-a2934dfccac4.jpg
-    b:
-      feed-reader: # The feed reader engine allows you to display RSS feeds on the TV.
-        src: https://gamate-hash.github.io/feed.xml
-        title: Entertainment News
-        refreshInterval: 300 # Optional. The interval in seconds to refresh the feed. If not specified the feed won't refresh automatically.
-        scrollSpeed: 35 # Optional. The speed to scroll text, in pixels per second. Higher is faster.
-        scrollDelay: 6 # Optional. The delay in seconds before and after scrolling text.
-        backgroundImage: false # Optional. The default image will be displayed if this is set to false. Do this when using in a mix layout to change the background color for instance.
-        # textColor: orangered # The text color of the feed reader; this is used for the text color of feed items
+  feed-reader:
+    src: https://docs.tvs.gcpw.art/tvs-changelog.xml
+    title: TVS Update News
+    refreshInterval: 300
+    scrollSpeed: 35
+    scrollDelay: 6
 
 - number: 4
-  name: Desktop
-  title: Desktop
-  abbr: DST
-  iframe: 
-   src: https://windows96.net/?rootfs=https://file.garden/aUYIWVAKvQxCBY-_/zip/gamaterootfs.zip
-   allowInteraction: true
-
-- number: 5
-  guide:
-   theme: "1989"
-   themeOptions:
-      ticker:
-      - "GAMATE CABLE - connecting you to the future"
-      - "Pay-Per-View Movies - Ch 1 - Straight from Hollywood to your home, anytime!"
-      - "Thunderstorm Advisory until AUG 12 2036 at 3:14 PM ET"
-
-- number: 6
-  title: Voxel
-  name: Voxel Explorer
-  icon: https://file.garden/aUYIWVAKvQxCBY-_/channels/dtv-2015/910RedZoneChannel.png
-  iframe:
-   src: https://windows93.net/c/programs/editors/WebVoxel/index.html
-   allowInteraction: true
-  
-
-- number: 7
-  title: RIZZ FM
-  name: RIZZ FM
-  visualizer: https://v2.windows93.net:8087/mpd.ogg
-  icon: https://file.garden/aUYIWVAKvQxCBY-_/channels/dtv-2015/851SonicTap.png
-  
-- number: 8
-  title: RTube
-  name: RTube
-  iframe:
-   src: https://gamate-hash.github.io/tv/
-   allowInteraction: true
-  
-- number: 9
-  title: Comedy Central
-  name: Comedy Central
-  video: https://gamate-hash.github.io/cable/tv.m3u8
-  icon: https://file.garden/aUYIWVAKvQxCBY-_/channels/dtv-2015/851SonicTap.png
+  name: Program Guide
+  abbr: GUIDE
+  title: Prevue Guide
+  noise: 0.1
+  v-split:
+    a:
+      h-split:
+        a:
+          basic-text:
+            src: https://taco2036.github.io/guide-ads.json
+            autoAdvance: true
+        b:
+          youtube-playlist:
+            src: UUUjlPym2cxucUVPdE8kYOOg
+            shuffle: true
+    b:
+      guide:
+        logo: placeholders/guide-header.png
+        alerts:
+          - position: 6
+            text: |
+              I HAVE CONSUMED 67 METAL PIPES JR.
