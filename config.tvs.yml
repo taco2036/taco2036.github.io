@@ -4,12 +4,10 @@ blur: false
 bezel: flat 
 startUnmuted: true
 
-dimensions:
-  screenWidth: 800 
-  screenHeight: 600
+
 
 osd:
-  theme: digital # 1990's analog C-band satellite receiver theme
+  theme: digital # old comcast ahh
 
 
 channels:
@@ -17,47 +15,55 @@ channels:
 - number: 1
   name: Welcome
   abbr: HELLO
-  title: Public Beta Testing # Optional. Title to show in the channel guides, including program guide channels and in the digital cable theme's on-screen guide.
-  description: Thanks for testing Television Simulator '99 v2, Public Beta! # Optional. Description to show in the guide.
+  title: Taco2036
+  description: Thanks for visiting Taco2036!
   image: /welcome.png
-  backgroundAudio: /placeholders/bgm-2.mp3
+  backgroundAudio: https://file.garden/aUYIWVAKvQxCBY-_/music/2003%20Weatherscan%20Track%208.mp3
 
 - number: 2
-  name: You're watching Television Simulator
-  abbr: TVS
-  video: placeholders/tvs-loop.mp4
-  backgroundAudio: /content/bgm-4.mp3
-
+  name: Google Nexus Uploads
+  description: Watch videos of Google's Discontinued Nexus Devices
+  abbr: NXS
+  youtube-playlist:
+    src: UUUjlPym2cxucUVPdE8kYOOg
+    shuffle: true
+  
 - number: 3
-  name: TVS Update News
-  abbr: NEWS
-  feed-reader:
-    src: https://docs.tvs.gcpw.art/tvs-changelog.xml
-    title: TVS Update News
-    refreshInterval: 300
-    scrollSpeed: 35
-    scrollDelay: 6
-
-- number: 4
   name: Program Guide
   abbr: GUIDE
-  title: Prevue Guide
+  title: Guide
   noise: 0.1
-  v-split:
-    a:
-      h-split:
-        a:
-          basic-text:
-            src: https://taco2036.github.io/guide-ads.json
-            autoAdvance: true
-        b:
-          youtube-playlist:
-            src: UUUjlPym2cxucUVPdE8kYOOg
-            shuffle: true
-    b:
-      guide:
-        logo: placeholders/guide-header.png
-        alerts:
-          - position: 6
-            text: |
-              I HAVE CONSUMED 67 METAL PIPES JR.
+  guide:
+      alerts:
+        - position: 6
+          text: |
+             I HAVE CONSUMED 67 METAL PIPES JR.
+
+- number: 4
+  name: Keno
+  abbr: KENO1
+  title: Keno
+  description: ONLY KENO - By Bubble Bass AKA Bubble Ass
+  keno:
+   drawingMinutes: 10
+   drawIntervalMs: 10000
+   centerText: ONLY KENO - That's ass Folks!
+
+- number: 5
+  name: Keno 2
+  abbr: KENO2
+  title: Keno 2
+  description: ONLY KENO - By Bubble Bass AKA Bubble Ass
+  keno:
+   drawingMinutes: 20
+   drawIntervalMs: 5000
+   centerText: ONLY KENO - BOMB PIZDA
+
+
+- number: 6
+  name: SML Uploads
+  description: Logan Thirtyacre's Popular Channel Videos
+  abbr: SML
+  youtube-playlist:
+    src: UUnSWkrRWNQWNhDusoWr_HXQ
+    shuffle: true
