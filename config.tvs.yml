@@ -38,15 +38,9 @@ channels:
   noise: 0.1
   v-split:
     a:
-      h-split:
-        a:
-          basic-text:
-            src: config-examples/basic-text/guide-ads.json
-            autoAdvance: true
-        b:
-          youtube-playlist:
-            src: UUUjlPym2cxucUVPdE8kYOOg
-            shuffle: true
+      youtube-playlist:
+      src: UUUjlPym2cxucUVPdE8kYOOg
+      shuffle: true
     b:
       guide:
         logo: placeholders/guide-header.png
