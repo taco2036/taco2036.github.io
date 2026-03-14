@@ -41,12 +41,17 @@ channels:
     youtube-playlist:
      src: UUUjlPym2cxucUVPdE8kYOOg
      shuffle: true
-  b:
-   guide:
-       alerts:
-         - position: 6
-           text: |
-              I HAVE CONSUMED 67 METAL PIPES JR.
+
+  b: # B is the bottom part
+      guide: # Program guides read the current channel lineup to reconstruct listings based off channel numbers, title and description. https://greenhillplaza.notion.site/Program-Guides-46e80919a3754efa9769f74dd00946fe?pvs=4
+        alerts: # "Alerts" that show up at certain positions in the guide.
+          - position: 12 # The channel to show the alert after. Doesn't need to be a real channel.
+            text: |
+              uppercut
+          - position: 100
+            text: | 
+              pickles
+
 
 - number: 4
   name: Keno
