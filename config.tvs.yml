@@ -53,7 +53,7 @@ channels:
   abbr: KENO1
   title: ONLY KENO!
   description: ONLY KENO - By Bubble Bass AKA Bubble Ass
-  backgroundAudio: /music.pls
+  backgroundAudio: https://taco2036.github.io/music.pls
   backgroundAudioOptions:
    shufflePlaylist: true
   keno:
@@ -66,7 +66,7 @@ channels:
   title: ONLY KENO!
   abbr: KENO2
   description: ONLY KENO - By Bubble Bass AKA Bubble Ass
-  backgroundAudio: /music.pls
+  backgroundAudio: https://taco2036.github.io/music.pls
   backgroundAudioOptions:
    shufflePlaylist: true
   keno:
