@@ -31,26 +31,35 @@ channels:
     src: UUUjlPym2cxucUVPdE8kYOOg
     shuffle: true
   
-- number: 3
+- number: 12
   name: Program Guide
   abbr: GUIDE
-  title: Guide
+  title: Prevue Guide
   noise: 0.1
   v-split:
-  a:
-    youtube-playlist:
-     src: UUUjlPym2cxucUVPdE8kYOOg
-     shuffle: true
-
-  b: # B is the bottom part
-      guide: # Program guides read the current channel lineup to reconstruct listings based off channel numbers, title and description. https://greenhillplaza.notion.site/Program-Guides-46e80919a3754efa9769f74dd00946fe?pvs=4
-        alerts: # "Alerts" that show up at certain positions in the guide.
-          - position: 12 # The channel to show the alert after. Doesn't need to be a real channel.
+    a:
+      h-split:
+        a:
+          basic-text:
+            src: config-examples/basic-text/guide-ads.json
+            autoAdvance: true
+        b:
+          youtube-playlist:
+            src: UUUjlPym2cxucUVPdE8kYOOg
+            shuffle: true
+    b:
+      guide:
+        logo: placeholders/guide-header.png
+        alerts:
+          - position: 6
             text: |
-              uppercut
+              Severe Thunderstorm Warning issued for Greenhill County until 6:00 PM
           - position: 100
-            text: | 
-              pickles
+            text: |
+              The following county services are unavailable:
+              Greenhill County Sheriff's Office
+              Greenhill County Fire Department
+              Greenhill County Emergency Services
 
 
 - number: 4
