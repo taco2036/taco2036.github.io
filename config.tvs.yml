@@ -4,7 +4,9 @@ blur: false
 bezel: flat 
 startUnmuted: true
 
-
+noSignalContent: # Optional. You can specify content to show when a channel is off the air.
+  image: nosignal_screen.png
+  backgroundAudio
 
 osd:
   theme: digital # old comcast ahh
@@ -66,4 +68,20 @@ channels:
   abbr: SML
   youtube-playlist:
     src: UUnSWkrRWNQWNhDusoWr_HXQ
+    shuffle: true
+
+- number: 7
+  name: June 12 2009
+  description: Analog TV Shutdown
+  abbr: ATV
+  youtube-playlist:
+    src: PL8fAhLpxoiJRqqdLTNy2ndLzMYYt5HXdJ
+    shuffle: true
+
+- number: 8
+  name: June 12 2009
+  description: Analog TV Shutdown
+  abbr: ATV
+  youtube-playlist:
+    src: PL8fAhLpxoiJRqqdLTNy2ndLzMYYt5HXdJ
     shuffle: true
