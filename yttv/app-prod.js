@@ -25462,7 +25462,7 @@ if (!self.__WB_pmw) {
         }
         ;
         d.PU = function() {
-            this.Ju = "https://gamate-hash.github.io/tv/assets/img/bg" + Math.floor(57 * Math.random() + 1) + ".jpg"
+            this.Ju = "bg" + Math.floor(57 * Math.random() + 1) + ".jpg"
         }
         ;
         d.Bg = function(a) {
@@ -29717,7 +29717,7 @@ if (!self.__WB_pmw) {
                 e(f[g], ["name", "path", "csiService", "ytHttp", "environmentModel", "authService", "cacheService", "listType", "brandable", f[g].parser || "videoParser", "paramKey", "params", "locale", f[g].altConstructor || Nl]);
             f = [{
                 name: "featuredService",
-                path: "/leanback_ajax",
+                path: "./leanback_ajax",
                 parser: "featuredParser",
                 paramKey: null,
                 params: {
