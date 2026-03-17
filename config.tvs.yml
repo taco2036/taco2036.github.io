@@ -40,11 +40,13 @@ channels:
   name: Program Guide
   abbr: GUIDE
   title: Prevue Guide
-  backgroundAudio: https://stream.revma.ihrhls.com/zc1701/hls.m3u8?streamid=1701&zip=&aw_0_1st.playerid=iHeartRadioWebPlayer&aw_0_1st.skey=11554381129&clientType=web&companionAds=false&deviceName=web-mobile&dist=iheart&host=webapp.US&listenerId=&playedFrom=157&pname=live_profile&profileId=11554381129&stationid=1701&terminalId=159&territory=US
+#  backgroundAudio: https://stream.revma.ihrhls.com/zc1701/hls.m3u8?streamid=1701&zip=&aw_0_1st.playerid=iHeartRadioWebPlayer&aw_0_1st.skey=11554381129&clientType=web&companionAds=false&deviceName=web-mobile&dist=iheart&host=webapp.US&listenerId=&playedFrom=157&pname=live_profile&profileId=11554381129&stationid=1701&terminalId=159&territory=US
   noise: 0.1
   v-split:
     a:
-      iframe: https://taco2036.github.io/clock/
+      youtube-playlist: 
+        src: UUUjlPym2cxucUVPdE8kYOOg
+        shuffle: true
     b:
       guide:
         alerts:
