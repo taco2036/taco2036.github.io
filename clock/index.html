@@ -1,0 +1,116 @@
+
+<!doctype html>
+<style>
+    @font-face {
+    font-family: 'AdLib';
+    src: url('https://file.garden/aUYIWVAKvQxCBY-_/fonts/roboto-2011/Roboto-Light.ttf') format('truetype')
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "AdLib", sans-serif;
+  background-color: wheat;
+}
+
+.layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.clock__layout {
+  width: 55rem;
+  height: 25rem;
+  position: relative;
+  border-radius: 25px;
+  border: 3px solid #000;
+  background: #EF028E;
+  background-size: 200% 300%;
+  animation: change-color 30s ease infinite;
+}
+
+@keyframes change-color {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.time__layout {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.time__show {
+  font-size: 12rem;
+  color: #fff;
+}
+
+.time__day {
+  position: absolute;
+  top: 85%;
+  left: 42%;
+  font-size: 1.6rem;
+  color: white;
+  display: none;
+}
+</style>
+<div class="layout">
+  <div class="clock__layout">
+    <div class="time__layout">
+      <div class="time__show"></div>
+      <div class="time__day"></div>
+    </div>
+  </div>
+</div>
+<script>
+    //Tiempo
+let clockTime = document.querySelector(".time__show");
+//Día de la semana
+let clockDay = document.querySelector(".time__day");
+
+setInterval(() => {
+    
+    let myDate = new Date();
+    let hours = myDate.getHours();
+    let min = myDate.getMinutes();
+    let day = myDate.getDay();
+    
+    //Sacar el día de la semana en letra
+    let daysWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let nameDay = daysWeek[day];
+
+    //Agregar el cero delante del número
+
+    if(hours < 10) hours = "0" + hours;
+    if(min < 10) min = "0" + min;
+
+    clockTime.textContent = `${hours}:${min}`;
+    clockDay.textContent = nameDay;
+
+}, 1000);
+</script>

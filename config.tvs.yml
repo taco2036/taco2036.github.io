@@ -20,7 +20,7 @@ channels:
   title: Taco2036
   description: Thanks for visiting Taco2036!
   image: /welcome.png
-  backgroundAudio: https://file.garden/aUYIWVAKvQxCBY-_/music/2003%20Weatherscan%20Track%208.mp3
+  backgroundAudio: https://file.garden/aUYIWVAKvQxCBY-_/music/Account_Organism.mp3
 
 - number: 2
   name: Google Nexus Uploads
@@ -35,15 +35,13 @@ channels:
   name: Program Guide
   abbr: GUIDE
   title: Prevue Guide
+  backgroundAudio: https://stream.revma.ihrhls.com/zc1701/hls.m3u8?streamid=1701&zip=&aw_0_1st.playerid=iHeartRadioWebPlayer&aw_0_1st.skey=11554381129&clientType=web&companionAds=false&deviceName=web-mobile&dist=iheart&host=webapp.US&listenerId=&playedFrom=157&pname=live_profile&profileId=11554381129&stationid=1701&terminalId=159&territory=US
   noise: 0.1
   v-split:
     a:
-      youtube-playlist:
-       src: UUUjlPym2cxucUVPdE8kYOOg
-       shuffle: true
+      iframe: https://taco2036.github.io/clock/
     b:
       guide:
-        logo: placeholders/guide-header.png
         alerts:
           - position: 6
             text: |
@@ -101,3 +99,26 @@ channels:
     src: PL8fAhLpxoiJRqqdLTNy2ndLzMYYt5HXdJ
     shuffle: true
 
+- number: 8
+  name: Customer Information
+  title: Customer Information
+  abbr: INFO
+  daily-schedule:
+    content:
+    - startTime: "01:00" # Time to start this item, in 24 hour format. Required.
+      endTime: "05:00" # Time to end this item, in 24 hour format. Required.
+      youtube-playlist:
+        src: UUUjlPym2cxucUVPdE8kYOOg
+        shuffle: true
+      
+    - startTime: "05:00"
+      endTime: "11:00"
+      youtube-playlist:
+        src: UU9hHiwe_gqxdHG3X1UGJEEA
+        shuffle: true
+
+    - startTime: "11:00"
+      endTime: "18:00"
+      youtube-playlist:
+        src: UUxQL_pszbsu5m-6LxEaz6gw
+        shuffle: true
