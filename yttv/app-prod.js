@@ -25468,7 +25468,7 @@ if (!self.__WB_pmw) {
         ;
         d.Bg = function(a) {
             if (this.O.supportsBackgrounds) {
-                a = a || this.qh && this.qh.aB || Q.kp + "/" + this.Ju;
+                a = a || this.qh && this.qh.aB || this.Ju;
                 var b = this.element.css("background-image");
                 (!b || 0 > b.indexOf(a)) && this.Iu.ai(this.element[0], a)
             }
