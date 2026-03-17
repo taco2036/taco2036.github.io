@@ -135,9 +135,9 @@ channels:
   description: Old Commercials 24/7
   abbr: ATV
   mix:
-  a:
+   a:
     youtube-playlist:
       src: PLj6qdykhRWPns7ZC6nGzsLz7SJIYwCcaB
       shuffle: true
-  b:
+   b:
     image: bugs/ac_screenbug.png
