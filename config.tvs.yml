@@ -148,3 +148,9 @@ channels:
       shuffle: true
    b:
     image: bugs/ac_screenbug.png
+
+- number: 10
+  title: Coming Soon
+  name: Coming Soon
+  description: Channel Coming Soon
+  image: unavailable.png
