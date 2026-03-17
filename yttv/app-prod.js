@@ -17100,7 +17100,8 @@ if (!self.__WB_pmw) {
         }
         ;
         Mi.prototype.YE = function(a, b, c) {
-            return this.wX + "https://i1.ytimg.com/" + b + "/" + a + "/" + c + ".jpg"
+            console.log(a);
+            return "https://i1.ytimg.com/" + b + "/" + a + "/" + c + ".jpg"
         }
         ;
         Mi.prototype.FZ = function(a) {
@@ -25462,7 +25463,7 @@ if (!self.__WB_pmw) {
         }
         ;
         d.PU = function() {
-            this.Ju = "bg" + Math.floor(57 * Math.random() + 1) + ".jpg"
+            this.Ju = "https://goob18.github.io/assets/img/bg" + Math.floor(57 * Math.random() + 1) + ".jpg"
         }
         ;
         d.Bg = function(a) {
