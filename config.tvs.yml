@@ -122,3 +122,22 @@ channels:
       youtube-playlist:
         src: UUxQL_pszbsu5m-6LxEaz6gw
         shuffle: true
+
+    - startTime: "20:00"
+      endTime: "22:00"
+      youtube-playlist:
+        src: UUf3nmE97dqY7pt5RMuSK97Q
+        shuffle: true
+
+- number: 7
+  name: Always Commercials
+  title: Always Commercials
+  description: Old Commercials 24/7
+  abbr: ATV
+  mix:
+  a:
+    youtube-playlist:
+      src: PLj6qdykhRWPns7ZC6nGzsLz7SJIYwCcaB
+      shuffle: true
+  b:
+    image: bugs/ac_screenbug.png
