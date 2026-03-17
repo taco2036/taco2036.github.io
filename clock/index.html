@@ -1,5 +1,7 @@
 
 <!doctype html>
+<html>
+<head>
 <style>
     @font-face {
     font-family: 'AdLib';
@@ -16,7 +18,7 @@ html {
 
 body {
   font-family: "AdLib", sans-serif;
-  background-color: wheat;
+  background-color: black;
 }
 
 .layout {
@@ -28,16 +30,6 @@ body {
   position: absolute;
 }
 
-.clock__layout {
-  width: 55rem;
-  height: 25rem;
-  position: relative;
-  border-radius: 25px;
-  border: 3px solid #000;
-  background: #EF028E;
-  background-size: 200% 300%;
-  animation: change-color 30s ease infinite;
-}
 
 @keyframes change-color {
   0% {
@@ -79,19 +71,14 @@ body {
   display: none;
 }
 </style>
-<div class="layout">
-  <div class="clock__layout">
-    <div class="time__layout">
-      <div class="time__show"></div>
-      <div class="time__day"></div>
+</head><body><div class="layout">
+  <div class="time__layout">
+      <div class="time__show">PLEASE WAIT, TIME/CLOCK IS LOADING...</div>
     </div>
-  </div>
 </div>
 <script>
     //Tiempo
 let clockTime = document.querySelector(".time__show");
-//Día de la semana
-let clockDay = document.querySelector(".time__day");
 
 setInterval(() => {
     
@@ -99,18 +86,12 @@ setInterval(() => {
     let hours = myDate.getHours();
     let min = myDate.getMinutes();
     let day = myDate.getDay();
-    
-    //Sacar el día de la semana en letra
-    let daysWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    let nameDay = daysWeek[day];
-
     //Agregar el cero delante del número
 
     if(hours < 10) hours = "0" + hours;
     if(min < 10) min = "0" + min;
 
     clockTime.textContent = `${hours}:${min}`;
-    clockDay.textContent = nameDay;
 
 }, 1000);
-</script>
+</script></body></html>
