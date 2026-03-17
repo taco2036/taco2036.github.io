@@ -11,6 +11,7 @@ noSignalContent: # Optional. You can specify content to show when a channel is o
 osd:
   theme: digital # old comcast ahh
 
+defaultChannel: 1
 
 channels:
 
